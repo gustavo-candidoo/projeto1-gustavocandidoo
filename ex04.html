@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+
+<head>
+    <title>Exercicio 04</title>
+</head>
+
+<script>
+    let n, u, up, b
+
+    n = prompt("Digite o nome do empregado: ")
+    u = Number(prompt("Número de unidades produzidas nesse ano: "))
+    up = Number(prompt("Número de unidades produzidas ano passado: "))
+
+    if (u > up){
+        if (u <= 1000 && u > 0){
+            b = 25
+            alert(" " +n+ ", seu bônus é de " +b+ "R$")
+        }
+        else if (u >=1001 && u <=3000){
+            b = 50
+            alert(" " +n+ ", seu bônus é de " +b+ "R$")
+        }
+        else if (u >= 3001 && u <= 6000){
+            b = 100
+            alert(" " +n+ ", seu bônus é de " +b+ "R$")
+        }
+        else if (u >= 6001 ){
+            b = 200
+            alert(" " +n+ ", seu bônus é de " +b+ "R$")
+        }
+        else{
+            alert("O número de unidades deve ser positivo.")
+        }
+    }
+    else{
+        b = 0
+        alert("O número de unidades neste ano não ultrapassou a quantidade do ano passado. Seu bônus é de " +b)
+    }
+</script>
